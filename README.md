@@ -3,6 +3,7 @@
 ## 애니메이션 효과란
  - 뷰나 속성에 간단한 변형을 줄 수 있는 효과
  - 기존 레이아웃 애니메이션과 안드로이드 3.0 에서 추가된 구성요소(Property) 애니메이션으로 나눌 수 있음
+ - 구글의 디자인 기조인 'Material Design'을 구현하기 위한 필수 
  
 
  ## 애니메이션 효과의 종류 및 대표 속성
@@ -56,7 +57,7 @@
      ```
 
 
-2. MainActivity.java (자바코드 구현)
+  2. MainActivity.java (자바코드 구현)
     ```java
     //버튼을 누르면 애니메이션이 동작하도록 구현
     public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -116,7 +117,7 @@
   aniSet.playTogether(transX, transY);
   //합친 애니메이션의 재생시간(3초) 부여
   aniSet.setDuration(3000);    
-  ``` 
+  ```
 
 ## Interpolator
   - 정의 : 기본적인 애니메이션이 변화하는 속도를 정의해둔 인터페이스.
@@ -125,5 +126,9 @@
   - 사용 가능한 애니메이션
   > AlphaAnimation, ScaleAnimation, TranslateAnimation, RotateAnimation 
 
-    
-  
+
+## 참고사이트
+  
+  - 안드로이드 디자인 가이드 
+    > (영문) https://material.io/guidelines/
+    > (한글) http://davidlab.net/google-design-ko/material-design/introduction.html
